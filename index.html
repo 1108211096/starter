@@ -10,6 +10,20 @@
 </head>
 <body>
     <h1>Hello Bootstrap</h1>
+    
+    <p>Today is
+
+        <script>
+            var today=new Date();
+            var dd=String(today.getDate()).padStart(2,'0');
+            var mm=String(today.getDate()+1).padStart(2,'0');
+            var yyy=today.getFullYear();
+
+            today=yyy+"/"+mm+'/'+dd;
+            document.write(today);
+        </script>
+    </p>
+    
     <ul>
         <li><a href="11000.html">My homework</a></li>    
         <li><a href="1107200052.html">Kyla</a></li>
